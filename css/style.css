@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top_menu {
+    display: flex;
+    background-color: #666;
+    height: 65px;
+    justify-content: space-between;
+}
+.top_menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.top_menu a {
+    color: white;
+    text-decoration: none;
+    transition: all .4s ease-out;
+}
+.top_menu a:hover {
+    color: black;
+}
