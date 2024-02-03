@@ -48,6 +48,84 @@ h3 {
     font-weight: 100;
     font-size: 15px;
 }
-.pb-50 {
+.pb-50, .mb-50 {
     padding-bottom: 50px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.coordinators__cards {
+    display: flex;
+    justify-content: space-around;
+}
+main p, main h2, .card {
+    text-align: center;
+}
+.card {
+    width: calc((100% / 4) - 50px);
+}
+main p {
+    color: #999;
+}
+main h2 {
+    color: #6DC72A
+}
+.line {
+    height: 1px;
+    background: #6DC72A;
+    width: 90%;
+    margin: 50px auto;
+}
+
+@media (условие) {
+
+}
+
+@media  print, screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .top_menu, .top_menu ul {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_menu a:link, .top_menu a:visited {
+        font-size: 25px;
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .coordinators__paragraph {
+        padding: 0 20px 50px;
+    }
+    .card {
+        width: calc((100% / 2) - 50px);
+        margin: 20px 0;
+    }
+    .coordinators__cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media  print, screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .top_menu, .top_menu ul, .coordinators__cards {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_menu a:link, .top_menu a:visited {
+        font-size: 25px;
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .coordinators__paragraph {
+        padding: 0 20px 50px;
+    }
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
 }
